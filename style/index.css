@@ -1,1 +1,242 @@
-/* Add CSS styling here */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Orelega+One&display=swap');
+
+
+* {
+  box-sizing: border-box;  
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Orelega One', cursive;
+    background-color: #0b0c10;
+
+}
+
+.header {
+    background-color: #1f2833;
+    padding: 50px;
+}
+
+header h1 {
+    font-size: 5rem;
+    color: #66fcf1;
+}
+
+header nav {
+    margin-top: 30px;
+}
+
+header nav a {
+    background-color: white;
+    color: black;
+    padding: 10px 25px;
+    text-decoration: none;
+    font-size: 1.3rem;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.intro {
+    width: 100%;
+    display: flex;
+    color: #45a29e;
+    
+}
+
+.intro button {
+    padding: 10px;
+    font-size: 1.5rem;
+    color: #66fcf1;
+    background-color: #1f2833; 
+
+}
+
+.intro img {
+   width: 400px;
+   margin-left: 100px;
+   margin-right: 100px;
+   margin-top: 15px;
+   border: 3px solid #1f2833;
+   border-radius: 20px;
+}
+
+.intro h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.intro p {
+    font-size: 2rem;
+    margin-top: 20px;
+}
+
+.intro-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: center;
+    margin-left: 50px;
+    width: 40%;
+    
+}
+
+.gallery {
+    margin: 30px 20px 50px 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+}
+
+.gallery img {
+    width: 300px;
+    border: 2px solid #1f2833;
+    border-radius: 10px;
+}
+
+.gallery h3 {
+    font-size: 2rem;
+    text-align: center;
+    color: #45a29e;
+}
+
+.footer {
+    background-color: #1f2833;
+    padding: 50px;
+    text-align: center;
+}
+
+.footer h3 {
+    font-size: 2.5rem;
+    color: #66fcf1;
+}
+
+.footer button {
+    font-size: 1.5rem;
+    padding: 10px;
+    color: #1f2833;
+    background-color: #66fcf1;
+    border: 1px solid #1f2833;
+}
+
+header nav a:hover {
+    background-color: #1f2833;
+    color: #66fcf1; 
+}
+
+.intro button:hover {
+    color: #1f2833;
+    background-color: #66fcf1;
+}
+
+.footer button:hover {
+    color: #66fcf1;
+    background-color: #1f2833; 
+    border: 1px solid #66fcf1;
+}
+
+.intro img:hover {
+    border: 3px solid #66fcf1;
+}
+
+.gallery img:hover {
+    border: 2px solid #66fcf1;
+}
+
+/*Contact page starts here */
+
+.contact-page {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.contact-page h2 {
+    color: #66fcf1;
+    font-size: 4rem;
+    text-decoration: underline;
+    margin-bottom: 25px;
+}
+
+.contact-page address {
+    font-size: 3rem;
+    color: #45a29e;
+}
+
+.contact-page address:hover {
+    color: #66fcf1;
+    font-size: 4rem;
+}
+
+.linkedin {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.linkedin img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.linkedin a {
+    font-size: 3rem;
+    text-decoration: none;
+    color: #66fcf1;
+
+}
+
+.linkedin a:hover {
+    text-decoration: underline;
+}
